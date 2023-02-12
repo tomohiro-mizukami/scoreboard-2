@@ -1,0 +1,110 @@
+/* https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/ */
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url(cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    background-color: #1B244A;
+}
+
+.score {
+    text-align: center;
+}
+
+.team {
+    padding: 10px 0;
+    margin: 0 0 11px;
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #EEE;
+}
+
+@media (max-width: 374px) {
+    .team {
+        font-size: 32px;
+    }
+}
+
+.points {
+    width: 155px;
+    height: 120px;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+    background-color:#080001;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 374px) {
+    .points {
+        width: 140px;
+        font-size: 80px;
+    }
+}
+
+.add-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    box-sizing: border-box;
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 18px;
+    line-height: 45px;
+    color: #9AABD8;
+
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+@media (max-width: 374px) {
+    .add {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+/* "New Game" button */
+.new-game-btn { 
+    position: absolute;
+    bottom: -15px;
+
+    padding: 8px 23px;
+    font-family: Verdana;
+    font-weight: 600;
+    background-color: #F94F6D;
+    color: #080001;
+    border: 2px solid #F94F6D;
+    cursor: pointer;
+}
+
+/* Hilight the leader */
+.highlighted {
+    background-color: #c1b001;
+}
